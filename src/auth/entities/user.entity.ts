@@ -12,7 +12,8 @@ export class User {
   name: string;
 
   @Prop({ minlength: 6, required: true })
-  password: string;
+  // se pone el ? para no tener que enviar el password encriptado de vuelta al usuario
+  password?: string;
 
   @Prop({ default: true })
   isActive: boolean;
